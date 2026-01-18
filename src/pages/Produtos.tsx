@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { AdminLayout } from "@/components/layout/AdminLayout";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -35,6 +36,7 @@ const categories = ["Todas", "Eletrônicos", "Acessórios", "Casa"];
 const statuses = ["Todos", "Ativo", "Inativo"];
 
 const Produtos = () => {
+  const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState("");
   const [categoryFilter, setCategoryFilter] = useState("Todas");
   const [statusFilter, setStatusFilter] = useState("Todos");
@@ -76,7 +78,7 @@ const Produtos = () => {
               Gerencie seu catálogo de produtos.
             </p>
           </div>
-          <Button>
+          <Button onClick={() => navigate("/produtos/novo")}>
             <Plus className="mr-2 h-4 w-4" />
             Adicionar Produto
           </Button>
