@@ -8,6 +8,7 @@ import Produtos from "./pages/Produtos";
 import ProdutoForm from "./pages/ProdutoForm";
 import Estoque from "./pages/Estoque";
 import Vendas from "./pages/Vendas";
+import PedidoDetalhes from "./pages/PedidoDetalhes";
 import Distribuicao from "./pages/Distribuicao";
 import Relatorios from "./pages/Relatorios";
 import Configuracoes from "./pages/Configuracoes";
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="/produtos/:id/editar" element={<ProdutoForm />} />
           <Route path="/estoque" element={<Estoque />} />
           <Route path="/vendas" element={<Vendas />} />
+          <Route path="/vendas/:id" element={<PedidoDetalhes />} />
           <Route path="/distribuicao" element={<Distribuicao />} />
           <Route path="/relatorios" element={<Relatorios />} />
           <Route path="/configuracoes" element={<Configuracoes />} />
