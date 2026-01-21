@@ -44,7 +44,7 @@ const Login = () => {
       <div className="w-full max-w-md">
         {/* Logo/Brand */}
         <div className="mb-8 text-center">
-          <h1 className="text-3xl font-bold text-primary">AdminPro</h1>
+          <h1 className="text-3xl font-bold text-primary">Do Frei</h1>
           <p className="mt-2 text-muted-foreground">
             Acesse sua conta para continuar
           </p>
@@ -127,7 +127,7 @@ const Login = () => {
 
         {/* Footer */}
         <p className="mt-6 text-center text-sm text-muted-foreground">
-          © 2024 AdminPro. Todos os direitos reservados.
+          © 2024 Do Frei. Todos os direitos reservados.
         </p>
       </div>
     </div>

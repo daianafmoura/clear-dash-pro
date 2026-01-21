@@ -45,7 +45,7 @@ export function Sidebar({
         {/* Logo */}
         <div className="flex h-16 items-center justify-between border-b border-sidebar-border px-4">
           {!collapsed && <span className="text-xl font-bold text-sidebar-foreground">
-              do Frei 
+              Do Frei
             </span>}
           <Button variant="ghost" size="icon" onClick={onToggle} className="text-sidebar-foreground hover:bg-sidebar-accent">
             {collapsed ? <ChevronRight className="h-5 w-5" /> : <ChevronLeft className="h-5 w-5" />}
@@ -66,7 +66,7 @@ export function Sidebar({
         {/* Footer */}
         {!collapsed && <div className="border-t border-sidebar-border p-4">
             <p className="text-xs text-sidebar-foreground/50">
-              © 2024 AdminPro
+              © 2024 Do Frei
             </p>
           </div>}
       </div>
