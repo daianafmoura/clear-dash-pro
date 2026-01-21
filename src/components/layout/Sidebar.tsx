@@ -2,6 +2,8 @@ import { NavLink, useLocation } from "react-router-dom";
 import { LayoutDashboard, Package, Warehouse, ShoppingCart, Truck, BarChart3, Settings, ChevronLeft, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import logoDoFrei from "@/assets/logo-dofrei.png";
+
 interface SidebarProps {
   collapsed: boolean;
   onToggle: () => void;
@@ -44,9 +46,9 @@ export function Sidebar({
       <div className="flex h-full flex-col">
         {/* Logo */}
         <div className="flex h-16 items-center justify-between border-b border-sidebar-border px-4">
-          {!collapsed && <span className="text-xl font-bold text-sidebar-foreground">
-              Do Frei
-            </span>}
+          {!collapsed && (
+            <img src={logoDoFrei} alt="Do Frei" className="h-10 w-auto" />
+          )}
           <Button variant="ghost" size="icon" onClick={onToggle} className="text-sidebar-foreground hover:bg-sidebar-accent">
             {collapsed ? <ChevronRight className="h-5 w-5" /> : <ChevronLeft className="h-5 w-5" />}
           </Button>
