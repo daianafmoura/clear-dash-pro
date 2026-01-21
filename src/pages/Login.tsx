@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
+import logoDoFrei from "@/assets/logo-dofrei.png";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -44,8 +45,8 @@ const Login = () => {
       <div className="w-full max-w-md">
         {/* Logo/Brand */}
         <div className="mb-8 text-center">
-          <h1 className="text-3xl font-bold text-primary">Do Frei</h1>
-          <p className="mt-2 text-muted-foreground">
+          <img src={logoDoFrei} alt="Do Frei" className="mx-auto h-20 w-auto" />
+          <p className="mt-4 text-muted-foreground">
             Acesse sua conta para continuar
           </p>
         </div>
