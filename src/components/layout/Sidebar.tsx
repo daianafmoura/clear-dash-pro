@@ -45,7 +45,7 @@ export function Sidebar({
       <div className="flex h-full flex-col">
         {/* Logo */}
         <div className="flex h-16 items-center justify-between border-b border-sidebar-border px-4 bg-secondary">
-          {!collapsed && <img src={logoDoFrei} alt="Do Frei" className="h-10 w-auto" />}
+          {!collapsed && <img src={logoDoFrei} alt="Do Frei" className="h-14 w-auto" />}
           <Button variant="ghost" size="icon" onClick={onToggle} className="text-sidebar-foreground hover:bg-sidebar-accent">
             {collapsed ? <ChevronRight className="h-5 w-5" /> : <ChevronLeft className="h-5 w-5" />}
           </Button>
